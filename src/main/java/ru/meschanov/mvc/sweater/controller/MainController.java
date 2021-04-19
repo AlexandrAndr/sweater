@@ -25,6 +25,7 @@ public class MainController {
         return "greeting";
     }
 
+
     @GetMapping
     public String main(Map<String, Object> model) {
         Iterable<MessageEntity> messages = messageRepo.findAll();
